@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+/*
+ * Web fonts
+ *
+ *     Adjust rules to add preferred LCG fonts.
+ *     Refer to lcg notes for supported fonts.
+ *
+ */
+
+@font-face {
+	font-family: 'Charis SIL';
+	src: local('Charis SIL'), local('CharisSIL'),
+		url('/fonts/lcg/CharisSIL-R.woff2') format('woff2'),
+		url('/fonts/lcg/CharisSIL-R.woff') format('woff'),
+		url('/fonts/lcg/CharisSIL-R.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Charis SIL';
+	src: local('Charis SIL Italic'), local('CharisSIL-Italic'),
+		url('/fonts/lcg/CharisSIL-I.woff2') format('woff2'),
+		url('/fonts/lcg/CharisSIL-I.woff') format('woff'),
+		url('/fonts/lcg/CharisSIL-I.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Charis SIL';
+	src: local('Charis SIL Bold'), local('CharisSIL-Bold'),
+		url('/fonts/lcg/GentiumPlus-B.woff2') format('woff2'),
+		url('/fonts/lcg/GentiumPlus-B.woff') format('woff'),
+		url('/fonts/lcg/GentiumPlus-B.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Charis SIL';
+	src: local('Charis SIL Bold Italic'), local('CharisSIL-BoldItalic'),
+		url('/fonts/lcg/GentiumPlus-BI.woff2') format('woff2'),
+		url('/fonts/lcg/GentiumPlus-BI.woff') format('woff'),
+		url('/fonts/lcg/GentiumPlus-BI.ttf') format('truetype');
+	font-weight: bold;
+	font-style: italic;
+}
