@@ -54,6 +54,17 @@
             font-variant-caps: normal;
         }
 
+        .c2sc, .c2scg1 {
+            font-feature-settings: "smcp" 1, "c2sc" 1;
+            font-variant-caps: all-small-caps;
+        }
+
+        .c2scg0 {
+            font-feature-settings: "smcp" 0, "c2sc" 0;
+            font-variant-caps: normal;
+        }
+
+
     </style>
   </head>
 
@@ -107,8 +118,8 @@
                 <tr><th>Class</th><th>Rules</th><th>Sample</th><th>Fonts</th><th>Notes</th></tr>
                 </thead>
                 <tbody>
-                <tr><td>cv75, cv75g1</td><td>"viet" 1, "cv75" 1</td><td style="sample"><span class="cv75">Ấấ Ầầ Ẩẩ Ẫẫ Ắắ Ằằ Ẳẳ Ẵẵ Ếế Ềề Ểể Ễễ Ốố Ồồ Ổổ Ỗỗ</span><br>Smapp caps: <span class="cv75 smcp">Ấấ Ầầ Ẩẩ Ẫẫ Ắắ Ằằ Ẳẳ Ẵẵ Ếế Ềề Ểể Ễễ Ốố Ồồ Ổổ Ỗỗ</span></td><td>Charis SIL</td><td></td></tr>
-                <tr><td>cv75g0</td><td>"viet" 0, "cv75" 0</td><td style="sample"><span class="cv75g0">Ấấ Ầầ Ẩẩ Ẫẫ Ắắ Ằằ Ẳẳ Ẵẵ Ếế Ềề Ểể Ễễ Ốố Ồồ Ổổ Ỗỗ</span></td><td>Charis SIL</td><td></td></tr>
+                <tr><td>cv75, cv75g1</td><td>"viet" 1, "cv75" 1</td><td style="sample"><span class="cv75">Default: Ấấ Ầầ Ẩẩ Ẫẫ Ắắ Ằằ Ẳẳ Ẵẵ Ếế Ềề Ểể Ễễ Ốố Ồồ Ổổ Ỗỗ</span><br>Small caps: <span class="cv75 smcp">Ấấ Ầầ Ẩẩ Ẫẫ Ắắ Ằằ Ẳẳ Ẵẵ Ếế Ềề Ểể Ễễ Ốố Ồồ Ổổ Ỗỗ</span></td><td>Charis SIL</td><td></td></tr>
+                <tr><td>cv75g0</td><td>"viet" 0, "cv75" 0</td><td style="sample"><span class="cv75g0">Default: Ấấ Ầầ Ẩẩ Ẫẫ Ắắ Ằằ Ẳẳ Ẵẵ Ếế Ềề Ểể Ễễ Ốố Ồồ Ổổ Ỗỗ</span><br>Small caps: <span class="cv75g0 smcp">Ấấ Ầầ Ẩẩ Ẫẫ Ắắ Ằằ Ẳẳ Ẵẵ Ếế Ềề Ểể Ễễ Ốố Ồồ Ổổ Ỗỗ</span></td><td>Charis SIL</td><td></td></tr>
                 </tbody>
                 </table>
 
@@ -121,8 +132,8 @@
                 <tr><th>Class</th><th>Rules</th><th>Sample</th><th>Fonts</th><th>Notes</th></tr>
                 </thead>
                 <tbody>
-                <tr><td>serb, serbg1</td><td>"serb" 1</td><td style="sample"><i class="serb">Бб Гг Дд Пп Тт</i></td><td>Charis SIL</td><td>This is a <em>Graphite</em> only feature, and will only display in Firefox with <em>Graphite</em> rendering enabled. Italic typefaces only.</td></tr>
-                <tr><td>serbg0</td><td>"serb" 0</td><td style="sample"><i class="serbg0">Бб Гг Дд Пп Тт</i></td><td>Charis SIL</td><td></td></tr>
+                <tr><td>serb, serbg1</td><td>"serb" 1</td><td style="sample"><i class="serb">Бб Гг Дд Пп Тт</i><i class="serb smcp">Бб Гг Дд Пп Тт</i></td><td>Charis SIL</td><td>This is a <em>Graphite</em> only feature, and will only display in Firefox with <em>Graphite</em> rendering enabled. Italic typefaces only.</td></tr>
+                <tr><td>serbg0</td><td>"serb" 0</td><td style="sample"><i class="serbg0">Бб Гг Дд Пп Тт</i><br><i class="serbg0 smcp">Бб Гг Дд Пп Тт</i></td><td>Charis SIL</td><td></td></tr>
                 </tbody>
                 </table>
 
