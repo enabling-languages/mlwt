@@ -122,7 +122,7 @@
 
                 <p>The Opentype tables provide the ```locl``` feature for Serbian and Vietnamese. The best way to use the Serbian and Vietnamese variant glyphs is by applying correct language tagging in your HTML document.</p>
 
-                
+
 
                 <h3 id="vietnamese-style-diacritics">Vietnamese-style diacritics</h3>
 
@@ -154,6 +154,35 @@
                   <p>N.B. There is currently no support for Macedonian italic variants. When using Graphite rendering it is possible to access the <code>serb</code> feature.</p>
                 </div>
 
+                <h3 id="support-for-other-languages-in-mlwt">Support for other languages in mlwt</h3>
+
+                <h4>Yolŋu languages</h4>
+
+                ```mlwt.lcg.css``` contains the following rule for Yolŋu languages:
+
+                <pre><code class="css">
+:lang(dhg), :lang(jay), :lang(lja), :lang(dwu), :lang(djr), :lang(gnn), :lang(guf), :lang(dax), :lang(dwy), :lang(rit), :lang(dji), :lang(djb) {
+    font-feature-settings: "Engs" 2, "cv43" 2;
+}
+                </code></pre>
+
+                <p>This rule allows Yolŋu text to be displayed with the correct version of U+014A (<span class=""></span>).</p>
+
+                <h4>Moro</h4>
+
+                <h4>Sami languages</h4>
+
+                <h3 id="write-your-own-langauge-rules">Write your own language rules</h3>
+
+                <p>It is possible to create your ownrules to tailor the typographic display for the languages you need to support:</p>
+
+                <ol>
+                    <li>Identify the CSS selector you wish to apply the rules to. If you choose to use a language psuedo-selector, select the most appropriate BCP-47 language tag</li>
+                    <li>Identify the graphite and opentype features you require<li>
+                    <li>When writing a rule using ```font-feature-settings``` inclcude the graphite feature before the opentype feature, if the features have different labels.</li>
+                <ol>
+
+                <p>For example: if write a rule for ik
 
                 <table class="table table-striped table-hover ">
                 <thead>
