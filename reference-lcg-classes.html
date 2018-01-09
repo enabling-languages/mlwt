@@ -120,7 +120,7 @@
 
                 <h2 id="language-specific-features">Language specific features</h2>
 
-                <p>The Opentype tables provide the ```locl``` feature for Serbian and Vietnamese. The best way to use the Serbian and Vietnamese variant glyphs is by applying correct language tagging in your HTML document.</p>
+                <p>The Opentype tables provide the <code>locl</code> feature for Serbian and Vietnamese. The best way to use the Serbian and Vietnamese variant glyphs is by applying correct language tagging in your HTML document.</p>
 
 
 
@@ -154,14 +154,29 @@
                   <p>N.B. There is currently no support for Macedonian italic variants. When using Graphite rendering it is possible to access the <code>serb</code> feature.</p>
                 </div>
 
+
+                <table class="table table-striped table-hover ">
+                <thead>
+                <tr><th>Class</th><th>Rules</th><th>Sample</th><th>Fonts</th><th>Notes</th></tr>
+                </thead>
+                <tbody>
+                <tr><td class="classes">serb, serbg1</td><td class="rules">"serb" 1</td><td class="sample">Default: <i class="serb">Бб Гг Дд Пп Тт</i><br>Small caps: <i class="serb small-caps">Бб Гг Дд Пп Тт</i></td><td class="fonts">Charis SIL</td><td>This is a <em>Graphite</em> only feature, and will only display in Firefox with <em>Graphite</em> rendering enabled. Italic typefaces only.</td></tr>
+                <tr><td class="classes">serbg0</td><td class="rules">"serb" 0</td><td class="sample">Default: <i class="serbg0">Бб Гг Дд Пп Тт</i><br>Small caps: <i class="serbg0 small-caps">Бб Гг Дд Пп Тт</i></td><td class="fonts">Charis SIL</td><td></td></tr>
+                </tbody>
+                </table>
+
+
+
                 <h3 id="support-for-other-languages-in-mlwt">Support for other languages in mlwt</h3>
 
                 <h4>Yolŋu languages</h4>
 
-                ```mlwt.lcg.css``` contains the following rule for Yolŋu languages:
+                <p><code>mlwt.lcg.css</code> contains the following rule for Yolŋu languages:</p>
 
                 <pre><code class="css">
-:lang(dhg), :lang(jay), :lang(lja), :lang(dwu), :lang(djr), :lang(gnn), :lang(guf), :lang(dax), :lang(dwy), :lang(rit), :lang(dji), :lang(djb) {
+:lang(dhg), :lang(jay), :lang(lja), :lang(dwu),
+:lang(djr), :lang(gnn), :lang(guf), :lang(dax),
+:lang(dwy), :lang(rit), :lang(dji), :lang(djb) {
     font-feature-settings: "Engs" 2, "cv43" 2;
 }
                 </code></pre>
@@ -184,15 +199,7 @@
 
                 <p>For example: if write a rule for ik
 
-                <table class="table table-striped table-hover ">
-                <thead>
-                <tr><th>Class</th><th>Rules</th><th>Sample</th><th>Fonts</th><th>Notes</th></tr>
-                </thead>
-                <tbody>
-                <tr><td class="classes">serb, serbg1</td><td class="rules">"serb" 1</td><td class="sample">Default: <i class="serb">Бб Гг Дд Пп Тт</i><br>Small caps: <i class="serb small-caps">Бб Гг Дд Пп Тт</i></td><td class="fonts">Charis SIL</td><td>This is a <em>Graphite</em> only feature, and will only display in Firefox with <em>Graphite</em> rendering enabled. Italic typefaces only.</td></tr>
-                <tr><td class="classes">serbg0</td><td class="rules">"serb" 0</td><td class="sample">Default: <i class="serbg0">Бб Гг Дд Пп Тт</i><br>Small caps: <i class="serbg0 small-caps">Бб Гг Дд Пп Тт</i></td><td class="fonts">Charis SIL</td><td></td></tr>
-                </tbody>
-                </table>
+
 
             </div>
 
