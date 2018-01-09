@@ -1,0 +1,19 @@
+@font-face {
+	font-family: 'Scheherazade Compact';
+	src: local('Scheherazade Compact Bold'), local('ScheherazadeCompact-Bold'),
+		url('Scheherazade-Compact-Bold.woff2') format('woff2'),
+		url('Scheherazade-Compact-Bold.woff') format('woff'),
+		url('Scheherazade-Compact-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Scheherazade Compact';
+	src: local('Scheherazade Compact'), local('ScheherazadeCompact-Regular'),
+		url('Scheherazade-Compact-Regular.woff2') format('woff2'),
+		url('Scheherazade-Compact-Regular.woff') format('woff'),
+		url('Scheherazade-Compact-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}

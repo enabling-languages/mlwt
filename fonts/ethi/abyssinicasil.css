@@ -1,0 +1,13 @@
+@font-face {
+	font-family: 'Abyssinica SIL';
+	src: local('Abyssinica SIL'), local('AbyssinicaSIL'),
+		url('/fonts/ethi/AbyssinicaSIL-R.woff2') format('woff2'),
+		url('/fonts/ethi/AbyssinicaSIL-R.woff') format('woff'),
+		url('/fonts/ethi/AbyssinicaSIL-R.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {
+	font-synthesis: none;
+}

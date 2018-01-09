@@ -1,0 +1,21 @@
+@charset "utf-8";
+
+@font-face {
+	font-family: 'Padauk';
+	src: local('Padauk Bold'),
+		url('Padauk-bold.woff2') format('woff2'),
+		url('Padauk-bold.woff') format('woff'),
+		url('Padauk-bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Padauk';
+	src: local('Padauk'),
+		url('Padauk.woff2') format('woff2'),
+		url('Padauk.woff') format('woff'),
+		url('Padauk.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}

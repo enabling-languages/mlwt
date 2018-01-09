@@ -1,0 +1,19 @@
+@font-face {
+	font-family: 'Scheherazade';
+	src: local('Scheherazade Bold'), local('Scheherazade-Bold'),
+		url('Scheherazade-Bold.woff2') format('woff2'),
+		url('Scheherazade-Bold.woff') format('woff'),
+		url('Scheherazade-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Scheherazade';
+	src: local('Scheherazade'), local('Scheherazade-Regular'),
+		url('Scheherazade-Regular.woff2') format('woff2'),
+		url('Scheherazade-Regular.woff') format('woff'),
+		url('Scheherazade-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}

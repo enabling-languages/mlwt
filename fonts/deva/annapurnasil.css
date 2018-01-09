@@ -1,0 +1,19 @@
+@font-face {
+	font-family: 'Annapurna SIL';
+	src: local('Annapurna SIL Bold'), local('AnnapurnaSIL-Bold'),
+		url('AnnapurnaSIL-Bold.woff2') format('woff2'),
+		url('AnnapurnaSIL-Bold.woff') format('woff'),
+		url('AnnapurnaSIL-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Annapurna SIL';
+	src: local('Annapurna SIL'), local('AnnapurnaSIL-Regular'),
+		url('AnnapurnaSIL-Regular.woff2') format('woff2'),
+		url('AnnapurnaSIL-Regular.woff') format('woff'),
+		url('AnnapurnaSIL-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
