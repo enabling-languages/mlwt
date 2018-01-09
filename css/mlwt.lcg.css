@@ -1045,3 +1045,13 @@
     }
   }
 */
+
+
+/*
+ *  Ozumacín Chinantec
+ *
+ */
+
+:lang(chz) {
+ font-feature-settings: "chtn" 1, "cv90" 1;
+}

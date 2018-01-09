@@ -19,10 +19,12 @@
 
     <!-- Custom styles for this template -->
     <link href="css/elos-template.css" rel="stylesheet">
+
+    <!-- Latin, Cyrillic and Greek font specific styling -->
     <link href="css/mlwt.lcg.css" rel="stylesheet">
 
     <!-- Adlam specific styling -->
-    <link href="css/adlm.css" rel="stylesheet">
+    <!-- <link href="css/adlm.css" rel="stylesheet"> -->
 
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
@@ -109,20 +111,25 @@
             <ul class="breadcrumb">
               <li><a href="index.html">Home</a></li>
               <li><a href="reference.html">Reference</a></li>
-              <li class="active">LCG classes</li>
+              <li><a href="lcg-classes.html">LCG fonts</a></li>
+              <li class="active">Language support</li>
             </ul>
         </div>
 
         <div class="row elos-template">
             <div class="col-md-12">
-                <h1> mlwt: <abbr title="Latin, CYrillic and Greek">LCG</abbr> classes</h1>
+                <h1> mlwt: Language specific support in <abbr title="Latin, Cyrillic and Greek">LCG</abbr> fonts</h1>
                 <p class="lead">CSS classes for use with LCG fonts developed by SIL International.</p>
 
                 <h2 id="language-specific-features">Language specific features</h2>
 
                 <p>The Opentype tables provide the <code>locl</code> feature for Serbian and Vietnamese. The best way to use the Serbian and Vietnamese variant glyphs is by applying correct language tagging in your HTML document.</p>
 
+                <p>Graphite fonts provide additional support not available via <code>locl</code> OpenType features.</p>
 
+                <p>Graphite language specific support for Teribe (Naso) and Konai use the Graphite <code>brig</code> feature, there is no equivalent Opentype feature and there is no <code>locl</code> support for these languages.</p>
+
+                <p>Graphite language specific support for Ozumacín Chinantec uses the Graphite <code>chtn</code> feature, which is equivalent to teh OpenType <code>cv90</code> feature. There is no <code>locl</code> support for Ozumacín Chinantec. A langauge specifc rule has been added to provide langaueg speciifc support for both Graphite and OpenType rendering.</p>
 
                 <h3 id="vietnamese-style-diacritics">Vietnamese-style diacritics</h3>
 
@@ -183,6 +190,15 @@
 
                 <p>This rule allows Yolŋu text to be displayed with the correct version of U+014A (<span class="cv43">Ŋ</span>).</p>
 
+
+                <h4>Ozumacín Chinantec</h4>
+
+                <pre><code class="css">
+:lang(chz) {
+    font-feature-settings: "chtn" 1, "cv90" 1;
+}
+                </code></pre>
+
                 <h4>Moro</h4>
 
                 <pre><code class="css">
@@ -196,9 +212,7 @@
                 <h4>Sami languages</h4>
 
                 <pre><code class="css">
-:lang(mor) {
-    font-feature-settings: "bowl" 1, "ss04" 1, "R_tl" 1, "cv55" 1;
-}
+
                 </code></pre>
 
 
