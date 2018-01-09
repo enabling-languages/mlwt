@@ -181,13 +181,29 @@
 }
                 </code></pre>
 
-                <p>This rule allows Yolŋu text to be displayed with the correct version of U+014A (<span class=""></span>).</p>
+                <p>This rule allows Yolŋu text to be displayed with the correct version of U+014A (<span class="cv43">Ŋ</span>).</p>
 
                 <h4>Moro</h4>
 
+                <pre><code class="css">
+:lang(mor) {
+    font-feature-settings: "bowl" 1, "ss04" 1, "R_tl" 1, "cv55" 1;
+}
+                </code></pre>
+
+<p>This rule allows Moro text to be displayed with alternative glyphs for U+0111 (<span class="ss04">đ</span>) and U+2C64 (<span class="cv55">Ɽ</span>).</p>
+
                 <h4>Sami languages</h4>
 
-                <h3 id="write-your-own-langauge-rules">Write your own language rules</h3>
+                <pre><code class="css">
+:lang(mor) {
+    font-feature-settings: "bowl" 1, "ss04" 1, "R_tl" 1, "cv55" 1;
+}
+                </code></pre>
+
+
+
+                <h3 id="write-your-own-language-rules">Write your own language rules</h3>
 
                 <p>It is possible to create your ownrules to tailor the typographic display for the languages you need to support:</p>
 
@@ -199,7 +215,10 @@
 
                 <!-- <p>For example: if write a rule for ik</p> -->
 
+                <h3 id="adding-language-rules-to-mlwt">Adding language rules to mlwt</h3>
 
+
+                <p>if you would liek to add rules for the languages you use to mlwt, please <a href="http://enabling-languages/mlwt/issues">create an issue</a> in the github project.</p>
 
             </div>
 
