@@ -61,6 +61,8 @@
  *    Graphite: viet
  *
  *    Fonts: Andika, Andika New Basic, Charis SIL
+ *
+ *    Affects: U+1EA4 U+1EA5 U+1EA6 U+1EA7 U+1EA8 U+1EA9 U+1EAA U+1EAB U+1EAE U+1EAF U+1EB0 U+1EB1 U+1EB2 U+1EB3 U+1EB4 U+1EB5 U+1EBE U+1EBF U+1EC0 U+1EC1 U+1EC2 U+1EC3 U+1EC4 U+1EC5 U+1ED0 U+1ED1 U+1ED2 U+1ED3 U+1ED4 U+1ED5 U+1ED6 U+1ED7
  */
 
 .cv75,
@@ -77,6 +79,8 @@
  *    Graphite: serb
  *
  *    Fonts: Andika, Charis SIL
+ *
+ *    Affects: U+0431 U+0433 U+0434 U+043F U+0442
  */
 
 .serb,
@@ -93,6 +97,8 @@
  *    Graphite: chtn
  *
  *    Fonts: Andika, Charis SIL
+ *
+ *    Affects: U+02CB U+02C8 U+02C9 U+02CA
  */
 
 .cv90,
@@ -109,6 +115,10 @@
  *    Graphite: brig
  *
  *    Fonts: Andika, Charis SIL
+ *
+ *    Affects:
+ *        U+0308 – used with “L” and “l”,
+ *        U+0311, U+0361 and U+035F – used with “O”, “o”, “U” and “u”.
  */
 
 .brig,
@@ -130,6 +140,8 @@
   *    Graphite: mone
   *
   *    Fonts: Andika, Charis SIL, Gentium Plus
+  *
+  *    Affects: U+042D U+044D
   */
 
 .cv80,
@@ -146,6 +158,8 @@
 *    Graphite: sbrv
 *
 *    Fonts: Andika, Charis SIL, Gentium Plus
+*
+*    Affexts: U+0306
 */
 
 .cv82,
@@ -162,6 +176,8 @@
 *    Graphite: shha
 *
 *    Fonts: Andika, Charis SIL, Gentium Plus
+*
+*    Affexts: U+04BB
 */
 
 .cv81,
