@@ -1,0 +1,196 @@
+/*
+ * BIDI ISOLATION
+ * http://www.w3.org/International/articles/inline-bidi-markup/
+ * http://www.w3.org/International/wiki/Html-bidi-isolation
+ *
+ * dir="auto"
+ */
+
+/*
+[dir='ltr'], [dir='rtl'] {
+	unicode-bidi: -webkit-isolate;
+	unicode-bidi: -moz-isolate;
+	unicode-bidi: -ms-isolate;
+	unicode-bidi: isolate;
+}
+
+bdo[dir='ltr'], bdo[dir='rtl'] {
+	unicode-bidi: bidi-override;
+	unicode-bidi: -webkit-isolate-override;
+	unicode-bidi: -moz-isolate-override;
+	unicode-bidi: -ms-isolate-override;
+	unicode-bidi: isolate-override;
+}
+*/
+
+:dir(rtl) {}
+.isRTL {}
+
+/* :dir(ltr) {}
+.isLTR {} */
+
+/*
+ * LANGUAGE specific styling
+ * http://www.w3.org/International/questions/qa-css-lang
+ *
+ */
+
+/*
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+*/
+
+/*
+ * Italic
+ *     - leave as browser default, over ride on a alangauge by language basis as required: address, cite, dfn, em, i
+ *
+ *   See:
+ *      https://www.w3.org/International/questions/qa-b-and-i-tags
+ *      https://www.w3.org/TR/html5/text-level-semantics.html#the-i-element
+ *      https://www.w3.org/TR/html5/text-level-semantics.html#the-em-element
+ *
+ *   <i> The i element represents a span of text in an alternate voice or mood, or otherwise offset from the normal prose in a manner indicating a different quality of text, such as a taxonomic designation, a technical term, an idiomatic phrase from another language, transliteration, a thought, or a ship name in Western texts. Authors can use the class attribute on the i element to identify why the element is being used, so that if the style of a particular use (e.g. dream sequences as opposed to taxonomic terms) is to be changed at a later date, the author doesn't have to go through the entire document (or series of related documents) annotating each use.
+ *
+ *   <em> The em element represents stress emphasis of its contents. The level of stress that a particular piece of content has is given by its number of ancestor em elements. The placement of stress emphasis changes the meaning of the sentence. The element thus forms an integral part of the content. The precise way in which stress is used in this way depends on the language.
+ *
+ *  Eg:
+ *     <p>The <i class="taxonomy">Felis silvestris catus</i> is cute.</p>
+ *     <p>The term <i class="technicalterm">prose content</i> is defined above.</p>
+ *     <p>There is a certain <i class="foreignphrase" lang="fr">je ne sais quoi</i> in the air.</p>
+ *
+ */
+
+/*
+address,
+cite,
+dfn,
+em,
+i,
+i.foreignphrase,
+i.technicalterm,
+i.taxonomy {
+  font-style: italic;
+}
+*/
+
+
+
+/* var - Represents a variable in a mathematical expression or a programming context. So should remain italic */
+/* var {
+    font-style: italic;
+}
+*/
+
+/*
+ * Monospace and form elements
+ */
+
+tt,
+code,
+kbd,
+listing {
+	/* leave as browser defaults, but can be overriden if required */
+	/* font: inherit;   */
+}
+
+button,
+input,
+optgroup,
+plaintext,
+pre,
+samp,
+select,
+textarea {
+  /* Override per language, if required */
+  font: inherit;
+}
+
+/*
+ * Underling
+ *    - add langauge specific tailoring as required.
+ *    - use text-underline-position to control position of underline.
+ *      See https://developer.mozilla.org/en-US/docs/Web/CSS/text-underline-position
+ *          https://www.w3.org/TR/html5/text-level-semantics.html#the-u-element
+ *
+ *  <u> The u element represents a span of text with an unarticulated, though explicitly rendered, non-textual annotation, such as labeling the text as being a proper name in Chinese text (a Chinese proper name mark), or labeling the text as being misspelt. In most cases, another element is likely to be more appropriate: for marking stress emphasis, the em element should be used; for marking key words or phrases either the b element or the mark element should be used, depending on the context; for marking book titles, the cite element should be used; for labeling text with explicit textual annotations, the ruby element should be used; for labeling ship names in Western texts, the i element should be used.
+ */
+
+/*
+u, ins {
+  text-decoration: underline;
+}
+
+abbr[title], acronym[title] {
+  text-decoration: dotted underline;
+}
+*/
+
+
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+	text-decoration: none;
+}
+
+
+/*
+ * Font weight
+ *
+ *     <b> The b element represents a span of text to which attention is being drawn for utilitarian purposes without conveying any extra importance and with no implication of an alternate voice or mood, such as key words in a document abstract, product names in a review, actionable words in interactive text-driven software, or an article lede (lead). As with the i element, authors can use the class attribute on the b element to identify why the element is being used, so that if the style of a particular use is to be changed at a later date, the author doesn't have to go through annotating each use. The b element should be used as a last resort when no other element is more appropriate. In particular, headings should use the h1 to h6 elements, stress emphasis should use the em element, importance should be denoted with the strong element, and text marked or highlighted should use the mark element.
+ *
+ *    <strong> The strong element represents strong importance, seriousness, or urgency for its contents. The relative level of importance of a piece of content is given by its number of ancestor strong elements; each strong element increases the importance of its contents.
+ *      - Importance: The strong element can be used in a heading, caption, or paragraph to distinguish the part that really matters from other parts of the that might be more detailed, more jovial, or merely boilerplate.
+ *      - Seriousness: The strong element can be used to mark up a warning or caution notice.
+ *      - Urgency: The strong element can be used to denote contents that the user needs to see sooner than other parts of the document.
+
+ * See:
+ *    https://www.w3.org/TR/html5/text-level-semantics.html#the-strong-element
+ *    https://www.w3.org/TR/html5/text-level-semantics.html#the-b-element
+ *
+ */
+
+/*
+ b,
+ strong {
+	 font-weight: bold;
+ }*/
+
+
+/*
+ *  Classes to control font synthesis
+ *
+ */
+
+.synthesis {
+    font-synthesis: style weight;
+}
+
+.no-synthesis {
+    font-synthesis: none;
+}
+
+.bold-synthesis {
+    font-synthesis: bold;
+}
+
+.italic-synthesis {
+    font-synthesis: italic;
+}
+
+/*
+ *  Small caps
+ *
+ */
+
+ .small-caps {
+     font-variant-caps: small-caps;
+ }
+
+ .all-small-caps {
+     font-variant-caps: all-small-caps;
+ }
