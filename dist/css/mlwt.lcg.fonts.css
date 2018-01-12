@@ -1,0 +1,176 @@
+@charset "UTF-8";
+
+/*
+ * Web fonts
+ *
+ *     Adjust rules to add preferred LCG fonts.
+ *     Refer to lcg notes for supported fonts.
+ *
+ */
+
+
+ /*
+  *    Charis SIL
+  *
+  */
+
+@font-face {
+	font-family: 'Charis SIL';
+	src: local('Charis SIL'), local('CharisSIL'),
+		url('fonts/lcg/CharisSIL-R.woff2') format('woff2'),
+		url('fonts/lcg/CharisSIL-R.woff') format('woff'),
+		url('fonts/lcg/CharisSIL-R.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Charis SIL';
+	src: local('Charis SIL Italic'), local('CharisSIL-Italic'),
+		url('fonts/lcg/CharisSIL-I.woff2') format('woff2'),
+		url('fonts/lcg/CharisSIL-I.woff') format('woff'),
+		url('fonts/lcg/CharisSIL-I.ttf') format('truetype');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Charis SIL';
+	src: local('Charis SIL Bold'), local('CharisSIL-Bold'),
+		url('fonts/lcg/CharisSIL-B.woff2') format('woff2'),
+		url('fonts/lcg/CharisSIL-B.woff') format('woff'),
+		url('fonts/lcg/CharisSIL-B.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Charis SIL';
+	src: local('Charis SIL Bold Italic'), local('CharisSIL-BoldItalic'),
+		url('fonts/lcg/CharisSIL-BI.woff2') format('woff2'),
+		url('fonts/lcg/CharisSIL-BI.woff') format('woff'),
+		url('fonts/lcg/CharisSIL-BI.ttf') format('truetype');
+	font-weight: bold;
+	font-style: italic;
+}
+
+
+.lcg {
+	font-family: "Charis SIL";
+}
+
+/*
+ *    Charis SIL Compact
+ *
+ */
+
+/*
+@font-face {
+   font-family: 'Charis SIL Compact';
+   src: local('Charis SIL Compact'), local('CharisSILCompact'),
+	   url('fonts/lcg/CharisSILCompact-R.woff2') format('woff2'),
+	   url('fonts/lcg/CharisSILCompact-R.woff') format('woff'),
+	   url('fonts/lcg/CharisSILCompact-R.ttf') format('truetype');
+   font-weight: normal;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: 'Charis SIL Compact';
+   src: local('Charis SIL Compact Italic'), local('CharisSILCompact-Italic'),
+	   url('fonts/lcg/CharisSILCompact-I.woff2') format('woff2'),
+	   url('fonts/lcg/CharisSILCompact-I.woff') format('woff'),
+	   url('fonts/lcg/CharisSILCompact-I.ttf') format('truetype');
+   font-weight: normal;
+   font-style: italic;
+}
+
+@font-face {
+   font-family: 'Charis SIL Compact';
+   src: local('Charis SIL Compact Bold'), local('CharisSILCompact-Bold'),
+	   url('fonts/lcg/CharisSILCompact-B.woff2') format('woff2'),
+	   url('fonts/lcg/CharisSILCompact-B.woff') format('woff'),
+	   url('fonts/lcg/CharisSILCompact-B.ttf') format('truetype');
+   font-weight: bold;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: 'Charis SIL Compact';
+   src: local('Charis SIL Compact Bold Italic'), local('CharisSILCompact-BoldItalic'),
+	   url('fonts/lcg/CharisSILCompact-BI.woff2') format('woff2'),
+	   url('fonts/lcg/CharisSILCompact-BI.woff') format('woff'),
+	   url('fonts/lcg/CharisSILCompact-BI.ttf') format('truetype');
+   font-weight: bold;
+   font-style: italic;
+}
+
+
+.lcg {
+   font-family: "Charis SIL Compact";
+}
+*/
+
+/*
+ *    Gentium Plus
+ *
+ */
+
+/*
+@font-face {
+   font-family: 'Gentium Plus';
+   src: local('Gentium Plus'), local('GentiumPlus'),
+	   url('fonts/lcg/GentiumPlus-R.woff2') format('woff2'),
+	   url('fonts/lcg/GentiumPlus-R.woff') format('woff'),
+	   url('fonts/lcg/GentiumPlus-R.ttf') format('truetype');
+   font-weight: normal;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: 'Gentium Plus';
+   src: local('Gentium Plus Italic'), local('GentiumPlus-Italic'),
+	   url('fonts/lcg/GentiumPlus-I.woff2') format('woff2'),
+	   url('fonts/lcg/GentiumPlus-I.woff') format('woff'),
+	   url('fonts/lcg/GentiumPlus-I.ttf') format('truetype');
+   font-weight: normal;
+   font-style: italic;
+}
+
+.lcg {
+   font-family: "Gentium Plus";
+   font-synthesis: none;
+}
+*/
+
+/*
+ *    Gentium Plus Compact
+ *
+ */
+
+/*
+@font-face {
+   font-family: 'Gentium Plus Compact';
+   src: local('Gentium Plus Compact'), local('GentiumPlusCompact'),
+	   url('fonts/lcg/GentiumPlusCompact-R.woff2') format('woff2'),
+	   url('fonts/lcg/GentiumPlusCompact-R.woff') format('woff'),
+	   url('fonts/lcg/GentiumPlusCompact-R.ttf') format('truetype');
+   font-weight: normal;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: 'Gentium Plus Compact';
+   src: local('Gentium Plus Compact Italic'), local('GentiumPlusCompact-Italic'),
+	   url('fonts/lcg/GentiumPlusCompact-I.woff2') format('woff2'),
+	   url('fonts/lcg/GentiumPlusCompact-I.woff') format('woff'),
+	   url('fonts/lcg/GentiumPlusCompact-I.ttf') format('truetype');
+   font-weight: normal;
+   font-style: italic;
+}
+
+.lcg {
+   font-family: "Gentium Plus Compact";
+   font-synthesis: none;
+}
+*/

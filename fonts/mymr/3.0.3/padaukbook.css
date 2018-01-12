@@ -1,0 +1,19 @@
+@font-face {
+	font-family: 'Padauk Book';
+	src: local('Padauk Book Bold'), local('PadaukBook-Bold'),
+		url('PadaukBook-Bold.woff2') format('woff2'),
+		url('PadaukBook-Bold.woff') format('woff'),
+		url('PadaukBook-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Padauk Book';
+	src: local('Padauk Book'), local('PadaukBook-Regular'),
+		url('PadaukBook-Regular.woff2') format('woff2'),
+		url('PadaukBook-Regular.woff') format('woff'),
+		url('PadaukBook-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
