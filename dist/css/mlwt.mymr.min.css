@@ -158,6 +158,10 @@ ol.alphaList:lang(my) {
     list-style-type: burmese-consonant;
 }
 
+ol.doubleAlphaList:lang(my) {
+    list-style-type: burmese-consonant-double;
+}
+
 ol.alphaList:lang(ksw) {}
 
 ol.alphaList:lang(mnw) {
